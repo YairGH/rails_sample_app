@@ -51,7 +51,12 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mini_portile2 (2.1.0)
     multi_json (1.12.1)
+    nokogiri (1.6.8)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
+    pkg-config (1.1.7)
     polyglot (0.3.5)
     power_assert (0.3.0)
     rack (1.4.7)
@@ -119,6 +124,10 @@ GEM
     tzinfo (0.3.51)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
+    webrat (0.7.1)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
 
 PLATFORMS
   ruby
@@ -133,6 +142,7 @@ DEPENDENCIES
   sqlite3
   test-unit
   uglifier (>= 1.0.3)
+  webrat (= 0.7.1)
 
 BUNDLED WITH
    1.12.5
