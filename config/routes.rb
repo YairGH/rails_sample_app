@@ -1,11 +1,13 @@
 RailsSampleApp::Application.routes.draw do
 
-  get "user/new"
+	resources :user
 
   match '/contact', :to => 'pages#contact'
   match '/about', :to => 'pages#about'
   match '/help', :to => 'pages#help'
   match '/signup', :to => 'user#new'
+
+
 
   root :to => 'pages#home'
 
